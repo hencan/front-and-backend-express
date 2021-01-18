@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Pesquisa</title>
+</head>
+
+<body>
+    <h2 id="title">Desafio BEM PRODUTORA</h2>
+    <form name="formPesquisa" id="formPesquisa" method="POST" enctype="application/x-www-form-urlencoded">
+        <h3 style="text-align: center;">Formulário de Pesquisa</h3>
+
+        <label for="nome">Nome:</label><br>
+        <input class="data" type="text" id="nomeField" name="nome" maxlength="35" size='37' required autocomplete="off"
+            autofocus><br>
+
+        <label for="cpf">CPF:</label><br>
+        <input class="data" type="text" id="cpfField" name="cpf" maxlength="11" size='13' required><br>
+
+        <label for="idade">Idade:</label><br>
+        <select class="data" id="idadeField" name="idade" required>
+            <option value="" selected>Selecionar</option>
+        </select><br>
+
+        <label for="convenio">Convênio:</label><br>
+        <select class="data" id="convenioField" name="convenio" required>
+            <option value="" selected>Selecionar</option>
+        </select><br>
+
+        <label for="renda">Renda:</label><br>
+        <select class="data" id="rendaField" name="renda" required>
+            <option value="" selected>Selecionar</option>
+        </select><br>
+
+        <label for="motivo">Motivo:</label><br>
+        <select class="data" id="motivoField" name="motivo" required>
+            <option value="" selected>Selecionar</option>
+        </select><br>
+
+        <label for="criado_em">Criado em:</label><br>
+        <input class="data" type="text" id="criado_emField" name="criado_em" readonly><br>
+
+        <!-- A função clearMsgEmail restaura as configurações iniciais do formulário. -->
+        <input class="btn" type="reset" value="Reset" onclick="resetForm()"><br>
+
+        <input class="btn" type="submit" id="subBtn" value="Salvar dados"><br>
+
+        <!-- Esta div é utilizada para interação das mensagens de validação. -->
+        <div id="msgForm">Nota: Preencha todos os campos</div>
+    </form>
+
+    <table id="table_resultados">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Idade</th>
+            <th>Convênio</th>
+            <th>Renda</th>
+            <th>Motivo</th>
+            <th>Criado em</th>
+        </tr>
+    </table>
+</body>
+<script src="script.js"></script>
+
+</html>
