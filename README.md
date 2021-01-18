@@ -1,4 +1,4 @@
-# DESAFIO BEM PRODUTORA
+# DESAFIO BEM PROMOTORA
 
 ## Objetivo do Desafio
 
